@@ -1,9 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'my-workspace',
+  displayName: 'sonar-test',
   preset: './jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: './coverage/my-workspace',
+  coverageDirectory: './coverage/sonar-test',
+  collectCoverage: true,
+  coverageReporters: ['json', 'lcov', 'text', 'clover'],
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
