@@ -11,5 +11,4 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 })
 export class AppComponent {
   title = 'sonar-test';
-  test='new';
 }
